@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;PhysicalFolder Path="C:\Users\Kane\.nuget\packages\fontawesome.sharp\5.15.3" Loaded="True" /&gt;&#xD;
+  &lt;PhysicalFolder Path="C:\Users\Kane\Desktop\Insurance Company\Insurance\packages\FontAwesome.Sharp.5.15.3" Loaded="True" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Insurance_002FInsurenceMaterialUI/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Insurance_002FProperties_002FResources/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=_041E_0442_043A_043B_044E_0447_0430_0435_043C/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=_043A_043D_043E_043F_043A_0438/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=_043E_0441_0442_0430_043B_044C_043D_044B_0435/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
