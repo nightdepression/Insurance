@@ -19,6 +19,12 @@ namespace Insurance
 
         private void объекты_страхованияBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(объект_страхованияTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(объект_страхованияTextBox.Text.Trim()))
+            { 
+                MessageBox.Show("Одно из ключевых полей было не заполнено", "Внимание");
+                return;
+            }
+
             this.Validate();
             this.объекты_страхованияBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
@@ -35,6 +41,11 @@ namespace Insurance
         private void объект_страхованияTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
+        private void объект_страхованияTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

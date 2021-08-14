@@ -298,6 +298,7 @@ namespace Insurance
             this.buttonUpdate.TabIndex = 25;
             this.buttonUpdate.Text = "Обновить данные";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // FormMarketing
             // 

@@ -29,5 +29,10 @@ namespace Insurance
             FormAddInsuranceType fAddDog = new FormAddInsuranceType();
             fAddDog.ShowDialog();
         }
+
+        private void buttonUpdate_Click(object sender, System.EventArgs e)
+        {
+            this.объекты_страхованияTableAdapter.Fill(this.database1DataSet.Объекты_страхования);
+        }
     }
 }

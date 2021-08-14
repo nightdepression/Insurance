@@ -206,6 +206,7 @@
             this.объект_страхованияTextBox.Name = "объект_страхованияTextBox";
             this.объект_страхованияTextBox.Size = new System.Drawing.Size(293, 26);
             this.объект_страхованияTextBox.TabIndex = 2;
+            this.объект_страхованияTextBox.TextChanged += new System.EventHandler(this.объект_страхованияTextBox_TextChanged);
             this.объект_страхованияTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.объект_страхованияTextBox_KeyPress);
             // 
             // FormAddInsuranceType

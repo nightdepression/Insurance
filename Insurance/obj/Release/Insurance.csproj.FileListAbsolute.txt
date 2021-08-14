@@ -16,9 +16,32 @@ C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insuranc
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.csproj.CopyComplete
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.exe
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.pdb
-C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\bin\Release\Database1.mdb
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddClient.resources
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddDogovor.resources
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddInsuranceType.resources
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddWithdrawMoney.resources
 C:\Users\Kane\Desktop\Insurance Company\Insurance\Insurance\obj\Release\LoadingAnimation.LoadingAnimation.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\bin\Release\Database1.mdb
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\bin\Release\Insurance.exe.config
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\bin\Release\Insurance.exe
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\bin\Release\Insurance.pdb
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\bin\Release\FontAwesome.Sharp.dll
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.csprojAssemblyReference.cache
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddClient.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddDogovor.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddInsuranceType.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAddWithdrawMoney.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormAdmin.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormClients.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormDashboard.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormInsurance.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormMarketing.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.FormReports.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.Form1.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\LoadingAnimation.LoadingAnimation.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.Properties.Resources.resources
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.csproj.GenerateResource.cache
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.csproj.CoreCompileInputs.cache
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.csproj.CopyComplete
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.exe
+C:\Users\Kane\Desktop\Important\# Repos\C#\Репозитории\Insurance Company\Insurance\Insurance\obj\Release\Insurance.pdb

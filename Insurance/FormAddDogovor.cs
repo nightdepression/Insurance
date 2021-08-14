@@ -53,6 +53,12 @@ namespace Insurance
 
         private void договораBindingNavigatorSaveItem_Click_3(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(фИО_КлиентаTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(фИО_КлиентаTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(iD_Объекта_страхованияTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(iD_Объекта_страхованияTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(страховая_премияTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(страховая_премияTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(страховая_выплатаTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(страховая_выплатаTextBox.Text.Trim()))
+            { MessageBox.Show("Одно из ключевых полей было не заполнено", "Внимание"); return; }
+
             this.Validate();
             this.договораBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
@@ -71,6 +77,11 @@ namespace Insurance
         private void iD_Объекта_страхованияTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

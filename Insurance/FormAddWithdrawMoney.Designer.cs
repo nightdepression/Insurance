@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddWithdrawMoney));
             System.Windows.Forms.Label датаLabel;
             System.Windows.Forms.Label ___ДоговораLabel;
             System.Windows.Forms.Label дата_заключенияLabel;
@@ -39,20 +38,21 @@
             System.Windows.Forms.Label страховая_премияLabel;
             System.Windows.Forms.Label сумма_выплатыLabel;
             System.Windows.Forms.Label описаниеLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddWithdrawMoney));
             this.database1DataSet = new Insurance.Database1DataSet();
             this.страховые_выплатыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.страховые_выплатыTableAdapter = new Insurance.Database1DataSetTableAdapters.Страховые_выплатыTableAdapter();
             this.tableAdapterManager = new Insurance.Database1DataSetTableAdapters.TableAdapterManager();
             this.страховые_выплатыBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.страховые_выплатыBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.датаDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.___ДоговораTextBox = new System.Windows.Forms.TextBox();
@@ -77,6 +77,105 @@
             ((System.ComponentModel.ISupportInitialize)(this.страховые_выплатыBindingNavigator)).BeginInit();
             this.страховые_выплатыBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // датаLabel
+            // 
+            датаLabel.AutoSize = true;
+            датаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            датаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            датаLabel.Location = new System.Drawing.Point(21, 62);
+            датаLabel.Name = "датаLabel";
+            датаLabel.Size = new System.Drawing.Size(39, 17);
+            датаLabel.TabIndex = 1;
+            датаLabel.Text = "Дата:";
+            // 
+            // ___ДоговораLabel
+            // 
+            ___ДоговораLabel.AutoSize = true;
+            ___ДоговораLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            ___ДоговораLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            ___ДоговораLabel.Location = new System.Drawing.Point(21, 100);
+            ___ДоговораLabel.Name = "___ДоговораLabel";
+            ___ДоговораLabel.Size = new System.Drawing.Size(89, 17);
+            ___ДоговораLabel.TabIndex = 3;
+            ___ДоговораLabel.Text = "№ Договора:";
+            // 
+            // дата_заключенияLabel
+            // 
+            дата_заключенияLabel.AutoSize = true;
+            дата_заключенияLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            дата_заключенияLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            дата_заключенияLabel.Location = new System.Drawing.Point(21, 144);
+            дата_заключенияLabel.Name = "дата_заключенияLabel";
+            дата_заключенияLabel.Size = new System.Drawing.Size(119, 17);
+            дата_заключенияLabel.TabIndex = 5;
+            дата_заключенияLabel.Text = "Дата заключения:";
+            // 
+            // срок_действия_доLabel
+            // 
+            срок_действия_доLabel.AutoSize = true;
+            срок_действия_доLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            срок_действия_доLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            срок_действия_доLabel.Location = new System.Drawing.Point(21, 184);
+            срок_действия_доLabel.Name = "срок_действия_доLabel";
+            срок_действия_доLabel.Size = new System.Drawing.Size(123, 17);
+            срок_действия_доLabel.TabIndex = 7;
+            срок_действия_доLabel.Text = "Срок действия до:";
+            // 
+            // iD_клиентаLabel
+            // 
+            iD_клиентаLabel.AutoSize = true;
+            iD_клиентаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            iD_клиентаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            iD_клиентаLabel.Location = new System.Drawing.Point(21, 226);
+            iD_клиентаLabel.Name = "iD_клиентаLabel";
+            iD_клиентаLabel.Size = new System.Drawing.Size(77, 17);
+            iD_клиентаLabel.TabIndex = 9;
+            iD_клиентаLabel.Text = "ID клиента:";
+            // 
+            // iD_объектаLabel
+            // 
+            iD_объектаLabel.AutoSize = true;
+            iD_объектаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            iD_объектаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            iD_объектаLabel.Location = new System.Drawing.Point(21, 265);
+            iD_объектаLabel.Name = "iD_объектаLabel";
+            iD_объектаLabel.Size = new System.Drawing.Size(77, 17);
+            iD_объектаLabel.TabIndex = 11;
+            iD_объектаLabel.Text = "ID объекта:";
+            // 
+            // страховая_премияLabel
+            // 
+            страховая_премияLabel.AutoSize = true;
+            страховая_премияLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            страховая_премияLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            страховая_премияLabel.Location = new System.Drawing.Point(21, 299);
+            страховая_премияLabel.Name = "страховая_премияLabel";
+            страховая_премияLabel.Size = new System.Drawing.Size(127, 17);
+            страховая_премияLabel.TabIndex = 13;
+            страховая_премияLabel.Text = "Страховая премия:";
+            // 
+            // сумма_выплатыLabel
+            // 
+            сумма_выплатыLabel.AutoSize = true;
+            сумма_выплатыLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            сумма_выплатыLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            сумма_выплатыLabel.Location = new System.Drawing.Point(21, 334);
+            сумма_выплатыLabel.Name = "сумма_выплатыLabel";
+            сумма_выплатыLabel.Size = new System.Drawing.Size(110, 17);
+            сумма_выплатыLabel.TabIndex = 15;
+            сумма_выплатыLabel.Text = "Сумма выплаты:";
+            // 
+            // описаниеLabel
+            // 
+            описаниеLabel.AutoSize = true;
+            описаниеLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            описаниеLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            описаниеLabel.Location = new System.Drawing.Point(21, 371);
+            описаниеLabel.Name = "описаниеLabel";
+            описаниеLabel.Size = new System.Drawing.Size(75, 17);
+            описаниеLabel.TabIndex = 17;
+            описаниеLabel.Text = "Описание:";
             // 
             // database1DataSet
             // 
@@ -132,6 +231,32 @@
             this.страховые_выплатыBindingNavigator.TabIndex = 0;
             this.страховые_выплатыBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMovePreviousItem
             // 
             this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -156,16 +281,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
-            this.bindingNavigatorCountItem.Text = "из {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -179,26 +297,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // страховые_выплатыBindingNavigatorSaveItem
             // 
@@ -209,17 +309,6 @@
             this.страховые_выплатыBindingNavigatorSaveItem.Text = "Save Data";
             this.страховые_выплатыBindingNavigatorSaveItem.Click += new System.EventHandler(this.страховые_выплатыBindingNavigatorSaveItem_Click);
             // 
-            // датаLabel
-            // 
-            датаLabel.AutoSize = true;
-            датаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            датаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            датаLabel.Location = new System.Drawing.Point(21, 62);
-            датаLabel.Name = "датаLabel";
-            датаLabel.Size = new System.Drawing.Size(39, 17);
-            датаLabel.TabIndex = 1;
-            датаLabel.Text = "Дата:";
-            // 
             // датаDateTimePicker
             // 
             this.датаDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.страховые_выплатыBindingSource, "Дата", true));
@@ -228,17 +317,6 @@
             this.датаDateTimePicker.Name = "датаDateTimePicker";
             this.датаDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.датаDateTimePicker.TabIndex = 2;
-            // 
-            // ___ДоговораLabel
-            // 
-            ___ДоговораLabel.AutoSize = true;
-            ___ДоговораLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            ___ДоговораLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            ___ДоговораLabel.Location = new System.Drawing.Point(21, 100);
-            ___ДоговораLabel.Name = "___ДоговораLabel";
-            ___ДоговораLabel.Size = new System.Drawing.Size(89, 17);
-            ___ДоговораLabel.TabIndex = 3;
-            ___ДоговораLabel.Text = "№ Договора:";
             // 
             // ___ДоговораTextBox
             // 
@@ -249,17 +327,6 @@
             this.___ДоговораTextBox.Size = new System.Drawing.Size(200, 20);
             this.___ДоговораTextBox.TabIndex = 4;
             // 
-            // дата_заключенияLabel
-            // 
-            дата_заключенияLabel.AutoSize = true;
-            дата_заключенияLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            дата_заключенияLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            дата_заключенияLabel.Location = new System.Drawing.Point(21, 144);
-            дата_заключенияLabel.Name = "дата_заключенияLabel";
-            дата_заключенияLabel.Size = new System.Drawing.Size(119, 17);
-            дата_заключенияLabel.TabIndex = 5;
-            дата_заключенияLabel.Text = "Дата заключения:";
-            // 
             // дата_заключенияDateTimePicker
             // 
             this.дата_заключенияDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.страховые_выплатыBindingSource, "Дата заключения", true));
@@ -268,17 +335,6 @@
             this.дата_заключенияDateTimePicker.Name = "дата_заключенияDateTimePicker";
             this.дата_заключенияDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.дата_заключенияDateTimePicker.TabIndex = 6;
-            // 
-            // срок_действия_доLabel
-            // 
-            срок_действия_доLabel.AutoSize = true;
-            срок_действия_доLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            срок_действия_доLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            срок_действия_доLabel.Location = new System.Drawing.Point(21, 184);
-            срок_действия_доLabel.Name = "срок_действия_доLabel";
-            срок_действия_доLabel.Size = new System.Drawing.Size(123, 17);
-            срок_действия_доLabel.TabIndex = 7;
-            срок_действия_доLabel.Text = "Срок действия до:";
             // 
             // срок_действия_доDateTimePicker
             // 
@@ -289,17 +345,6 @@
             this.срок_действия_доDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.срок_действия_доDateTimePicker.TabIndex = 8;
             // 
-            // iD_клиентаLabel
-            // 
-            iD_клиентаLabel.AutoSize = true;
-            iD_клиентаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            iD_клиентаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            iD_клиентаLabel.Location = new System.Drawing.Point(21, 226);
-            iD_клиентаLabel.Name = "iD_клиентаLabel";
-            iD_клиентаLabel.Size = new System.Drawing.Size(77, 17);
-            iD_клиентаLabel.TabIndex = 9;
-            iD_клиентаLabel.Text = "ID клиента:";
-            // 
             // iD_клиентаTextBox
             // 
             this.iD_клиентаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.страховые_выплатыBindingSource, "ID клиента", true));
@@ -308,17 +353,6 @@
             this.iD_клиентаTextBox.Name = "iD_клиентаTextBox";
             this.iD_клиентаTextBox.Size = new System.Drawing.Size(200, 20);
             this.iD_клиентаTextBox.TabIndex = 10;
-            // 
-            // iD_объектаLabel
-            // 
-            iD_объектаLabel.AutoSize = true;
-            iD_объектаLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            iD_объектаLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            iD_объектаLabel.Location = new System.Drawing.Point(21, 265);
-            iD_объектаLabel.Name = "iD_объектаLabel";
-            iD_объектаLabel.Size = new System.Drawing.Size(77, 17);
-            iD_объектаLabel.TabIndex = 11;
-            iD_объектаLabel.Text = "ID объекта:";
             // 
             // iD_объектаTextBox
             // 
@@ -329,17 +363,6 @@
             this.iD_объектаTextBox.Size = new System.Drawing.Size(200, 20);
             this.iD_объектаTextBox.TabIndex = 12;
             // 
-            // страховая_премияLabel
-            // 
-            страховая_премияLabel.AutoSize = true;
-            страховая_премияLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            страховая_премияLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            страховая_премияLabel.Location = new System.Drawing.Point(21, 299);
-            страховая_премияLabel.Name = "страховая_премияLabel";
-            страховая_премияLabel.Size = new System.Drawing.Size(127, 17);
-            страховая_премияLabel.TabIndex = 13;
-            страховая_премияLabel.Text = "Страховая премия:";
-            // 
             // страховая_премияTextBox
             // 
             this.страховая_премияTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.страховые_выплатыBindingSource, "Страховая премия", true));
@@ -349,17 +372,6 @@
             this.страховая_премияTextBox.Size = new System.Drawing.Size(200, 20);
             this.страховая_премияTextBox.TabIndex = 14;
             // 
-            // сумма_выплатыLabel
-            // 
-            сумма_выплатыLabel.AutoSize = true;
-            сумма_выплатыLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            сумма_выплатыLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            сумма_выплатыLabel.Location = new System.Drawing.Point(21, 334);
-            сумма_выплатыLabel.Name = "сумма_выплатыLabel";
-            сумма_выплатыLabel.Size = new System.Drawing.Size(110, 17);
-            сумма_выплатыLabel.TabIndex = 15;
-            сумма_выплатыLabel.Text = "Сумма выплаты:";
-            // 
             // сумма_выплатыTextBox
             // 
             this.сумма_выплатыTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.страховые_выплатыBindingSource, "Сумма выплаты", true));
@@ -368,17 +380,6 @@
             this.сумма_выплатыTextBox.Name = "сумма_выплатыTextBox";
             this.сумма_выплатыTextBox.Size = new System.Drawing.Size(200, 20);
             this.сумма_выплатыTextBox.TabIndex = 16;
-            // 
-            // описаниеLabel
-            // 
-            описаниеLabel.AutoSize = true;
-            описаниеLabel.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            описаниеLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            описаниеLabel.Location = new System.Drawing.Point(21, 371);
-            описаниеLabel.Name = "описаниеLabel";
-            описаниеLabel.Size = new System.Drawing.Size(75, 17);
-            описаниеLabel.TabIndex = 17;
-            описаниеLabel.Text = "Описание:";
             // 
             // описаниеTextBox
             // 

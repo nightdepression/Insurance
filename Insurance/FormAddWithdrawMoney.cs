@@ -19,6 +19,14 @@ namespace Insurance
 
         private void страховые_выплатыBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(___ДоговораTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(___ДоговораTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(iD_клиентаTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(iD_клиентаTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(iD_объектаTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(iD_объектаTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(страховая_премияTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(страховая_премияTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(сумма_выплатыTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(сумма_выплатыTextBox.Text.Trim()) ||
+                string.IsNullOrEmpty(описаниеTextBox.Text.Trim()) || string.IsNullOrWhiteSpace(описаниеTextBox.Text.Trim()))
+            { MessageBox.Show("Одно из ключевых полей было не заполнено", "Внимание"); return; }
+
             this.Validate();
             this.страховые_выплатыBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
@@ -29,6 +37,11 @@ namespace Insurance
         {
             // TODO: This line of code loads data into the 'database1DataSet.Страховые_выплаты' table. You can move, or remove it, as needed.
             this.страховые_выплатыTableAdapter.Fill(this.database1DataSet.Страховые_выплаты);
+
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
 
         }
     }

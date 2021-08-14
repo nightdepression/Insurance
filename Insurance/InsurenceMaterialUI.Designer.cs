@@ -93,6 +93,7 @@
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Visible = false;
             this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click_1);
             // 
             // reportsButton

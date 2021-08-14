@@ -34,7 +34,14 @@ namespace Insurance
 
         private void buttonUpdate_Click(object sender, System.EventArgs e)
         {
-            
+            this.договораTableAdapter.Fill(this.database1DataSet.Договора);
+        }
+
+        private void textBox1_TextChanged(object sender, System.EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBox1.Text.Trim()) && !string.IsNullOrWhiteSpace(textBox1.Text.Trim()))
+                договораBindingSource.Filter = "[ФИО Клиента] LIKE '%" + textBox1.Text + "%'";
+            else договораBindingSource.Filter = "";
         }
     }
 }

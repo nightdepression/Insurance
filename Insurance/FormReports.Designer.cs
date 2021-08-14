@@ -37,6 +37,9 @@ namespace Insurance
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.database1DataSet = new Insurance.Database1DataSet();
             this.страховые_выплатыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.страховые_выплатыTableAdapter = new Insurance.Database1DataSetTableAdapters.Страховые_выплатыTableAdapter();
@@ -54,6 +57,8 @@ namespace Insurance
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.страховые_выплатыBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.buttonAddDogovor = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.страховые_выплатыDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,13 +69,25 @@ namespace Insurance
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonAddDogovor = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.клиентыDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.клиентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.клиентыTableAdapter = new Insurance.Database1DataSetTableAdapters.КлиентыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.страховые_выплатыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.страховые_выплатыBindingNavigator)).BeginInit();
             this.страховые_выплатыBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.страховые_выплатыDataGridView)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -222,6 +239,42 @@ namespace Insurance
             this.страховые_выплатыBindingNavigatorSaveItem.Text = "Save Data";
             this.страховые_выплатыBindingNavigatorSaveItem.Click += new System.EventHandler(this.страховые_выплатыBindingNavigatorSaveItem_Click);
             // 
+            // buttonAddDogovor
+            // 
+            this.buttonAddDogovor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAddDogovor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
+            this.buttonAddDogovor.FlatAppearance.BorderSize = 0;
+            this.buttonAddDogovor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddDogovor.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            this.buttonAddDogovor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            this.buttonAddDogovor.Location = new System.Drawing.Point(95, 28);
+            this.buttonAddDogovor.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddDogovor.Name = "buttonAddDogovor";
+            this.buttonAddDogovor.Size = new System.Drawing.Size(896, 51);
+            this.buttonAddDogovor.TabIndex = 24;
+            this.buttonAddDogovor.Text = "Добавить выплату";
+            this.buttonAddDogovor.UseVisualStyleBackColor = false;
+            this.buttonAddDogovor.Click += new System.EventHandler(this.buttonAddDogovor_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
+            this.buttonUpdate.FlatAppearance.BorderSize = 0;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdate.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
+            this.buttonUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
+            this.buttonUpdate.Location = new System.Drawing.Point(95, 97);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(896, 51);
+            this.buttonUpdate.TabIndex = 26;
+            this.buttonUpdate.Text = "Обновить данные";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
             // страховые_выплатыDataGridView
             // 
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
@@ -258,9 +311,10 @@ namespace Insurance
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.страховые_выплатыDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.страховые_выплатыDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.страховые_выплатыDataGridView.Location = new System.Drawing.Point(0, 234);
+            this.страховые_выплатыDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.страховые_выплатыDataGridView.Location = new System.Drawing.Point(3, 3);
             this.страховые_выплатыDataGridView.Name = "страховые_выплатыDataGridView";
+            this.страховые_выплатыDataGridView.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,7 +323,7 @@ namespace Insurance
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.страховые_выплатыDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.страховые_выплатыDataGridView.Size = new System.Drawing.Size(1059, 344);
+            this.страховые_выплатыDataGridView.Size = new System.Drawing.Size(1053, 156);
             this.страховые_выплатыDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -277,89 +331,184 @@ namespace Insurance
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Дата";
             this.dataGridViewTextBoxColumn1.HeaderText = "Дата";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "№ Договора";
             this.dataGridViewTextBoxColumn2.HeaderText = "№ Договора";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Дата заключения";
             this.dataGridViewTextBoxColumn3.HeaderText = "Дата заключения";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Срок действия до";
             this.dataGridViewTextBoxColumn4.HeaderText = "Срок действия до";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "ID клиента";
             this.dataGridViewTextBoxColumn5.HeaderText = "ID клиента";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "ID объекта";
             this.dataGridViewTextBoxColumn6.HeaderText = "ID объекта";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "Страховая премия";
             this.dataGridViewTextBoxColumn7.HeaderText = "Страховая премия";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Сумма выплаты";
             this.dataGridViewTextBoxColumn8.HeaderText = "Сумма выплаты";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "Описание";
             this.dataGridViewTextBoxColumn9.HeaderText = "Описание";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
-            // buttonAddDogovor
+            // tableLayoutPanel1
             // 
-            this.buttonAddDogovor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddDogovor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
-            this.buttonAddDogovor.FlatAppearance.BorderSize = 0;
-            this.buttonAddDogovor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddDogovor.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            this.buttonAddDogovor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            this.buttonAddDogovor.Location = new System.Drawing.Point(95, 28);
-            this.buttonAddDogovor.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonAddDogovor.Name = "buttonAddDogovor";
-            this.buttonAddDogovor.Size = new System.Drawing.Size(896, 51);
-            this.buttonAddDogovor.TabIndex = 24;
-            this.buttonAddDogovor.Text = "Добавить выплату";
-            this.buttonAddDogovor.UseVisualStyleBackColor = false;
-            this.buttonAddDogovor.Click += new System.EventHandler(this.buttonAddDogovor_Click);
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.клиентыDataGridView, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.страховые_выплатыDataGridView, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 235);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.44681F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 181F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1059, 343);
+            this.tableLayoutPanel1.TabIndex = 27;
             // 
-            // buttonUpdate
+            // клиентыDataGridView
             // 
-            this.buttonUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
-            this.buttonUpdate.FlatAppearance.BorderSize = 0;
-            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUpdate.Font = new System.Drawing.Font("Ubuntu", 9.749999F);
-            this.buttonUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(233)))), ((int)(((byte)(228)))));
-            this.buttonUpdate.Location = new System.Drawing.Point(95, 97);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(896, 51);
-            this.buttonUpdate.TabIndex = 26;
-            this.buttonUpdate.Text = "Обновить данные";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.клиентыDataGridView.AutoGenerateColumns = false;
+            this.клиентыDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.клиентыDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.клиентыDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.клиентыDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.клиентыDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.клиентыDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.клиентыDataGridView.DataSource = this.клиентыBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.клиентыDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.клиентыDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.клиентыDataGridView.Location = new System.Drawing.Point(3, 165);
+            this.клиентыDataGridView.Name = "клиентыDataGridView";
+            this.клиентыDataGridView.ReadOnly = true;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.клиентыDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.клиентыDataGridView.Size = new System.Drawing.Size(1053, 175);
+            this.клиентыDataGridView.TabIndex = 27;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Номер клиента";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Номер клиента";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "ФИО клиента";
+            this.dataGridViewTextBoxColumn11.HeaderText = "ФИО клиента";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Дата рождения";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Дата рождения";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Адрес";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Паспортные данные";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Паспортные данные";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Примечание";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Примечание";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // клиентыBindingSource
+            // 
+            this.клиентыBindingSource.DataMember = "Клиенты";
+            this.клиентыBindingSource.DataSource = this.database1DataSet;
+            // 
+            // клиентыTableAdapter
+            // 
+            this.клиентыTableAdapter.ClearBeforeFill = true;
             // 
             // FormReports
             // 
@@ -367,9 +516,9 @@ namespace Insurance
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
             this.ClientSize = new System.Drawing.Size(1059, 578);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAddDogovor);
-            this.Controls.Add(this.страховые_выплатыDataGridView);
             this.Controls.Add(this.страховые_выплатыBindingNavigator);
             this.Name = "FormReports";
             this.Text = "Выплаты";
@@ -380,6 +529,9 @@ namespace Insurance
             this.страховые_выплатыBindingNavigator.ResumeLayout(false);
             this.страховые_выплатыBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.страховые_выплатыDataGridView)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,6 +556,8 @@ namespace Insurance
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton страховые_выплатыBindingNavigatorSaveItem;
+        private System.Windows.Forms.Button buttonAddDogovor;
+        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.DataGridView страховые_выплатыDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -414,7 +568,16 @@ namespace Insurance
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.Button buttonAddDogovor;
-        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.BindingSource клиентыBindingSource;
+        private Database1DataSetTableAdapters.КлиентыTableAdapter клиентыTableAdapter;
+        private System.Windows.Forms.DataGridView клиентыDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
     }
 }
